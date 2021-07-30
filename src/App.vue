@@ -1,17 +1,49 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <v-app :style="{background: $vuetify.theme.themes.dark.background}">
+    <v-app-bar color="black" app>
+      <v-app-bar-title class="text-pink-lighten-3">
+        Lil Pink&apos;s Pastries
+      </v-app-bar-title>
+      <!-- <v-btn text to="/">Home</v-btn>
+      <v-btn text to="/about">About</v-btn> -->
+    </v-app-bar>
+
+    <v-main>
+      <!-- Provides the application the proper gutter -->
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-main>
+
+    <v-footer color="black" app>
+      <div>
+        &copy; 2021
+      </div>
+      <v-spacer></v-spacer>
+      <div>
+        Made with&nbsp;
+        <v-icon
+          class="text-red"
+          icon="fas fa-heart"
+        ></v-icon>
+        &nbsp;by
+        <a
+           href="https://ash.ashwigltd.com"
+           target="_blank"
+        >Ash Hellwig
+        </a>
+      </div>
+    </v-footer>
+  </v-app>
 </template>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
-</style>
+<script>
+
+export default {
+  name: 'App',
+
+  data: () => ({
+    //
+  })
+}
+</script>
