@@ -1,7 +1,7 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes.dark.background}">
     <v-app-bar color="black" app>
-      <v-app-bar-title class="text-pink-lighten-3">
+      <v-app-bar-title id="title" class="text-pink-lighten-3">
         Lil Pink&apos;s Pastries
       </v-app-bar-title>
       <!-- <v-btn text to="/">Home</v-btn>
@@ -47,3 +47,10 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+#title {
+  font-family: 'Style Script', cursive;
+  font-size: 35pt;
+}
+</style>
