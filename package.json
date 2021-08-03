@@ -12,8 +12,11 @@
   "dependencies": {
     "@mdi/font": "5.9.55",
     "core-js": "^3.6.5",
+    "npm": "^7.20.3",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
+    "run": "^1.4.0",
+    "serve": "^12.0.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuetify": "^3.0.0-alpha.0",

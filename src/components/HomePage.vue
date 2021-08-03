@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import logo from '../assets/logo_original.jpg'
+import logo from '../assets/logo_original.png'
 
 export default {
   name: 'HomePage',
