@@ -29,7 +29,7 @@
 import logo from '../assets/logo_original.png'
 
 export default {
-  name: 'HomePage',
+  name: 'PastryPricingPage',
 
   data: () => ({
     logo

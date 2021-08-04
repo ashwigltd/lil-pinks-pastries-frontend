@@ -4,8 +4,10 @@
       <v-app-bar-title id="title" class="text-pink-lighten-3">
         Lil Pink&apos;s Pastries
       </v-app-bar-title>
-      <!-- <v-btn text to="/">Home</v-btn>
-      <v-btn text to="/about">About</v-btn> -->
+      <v-btn color="black" flat class="text-white" to="/">Home</v-btn>
+      <v-btn color="black" flat class="text-white" to="/pastrypricing">Pricing</v-btn>
+      <v-btn color="black" flat class="text-white" to="/gallery">Gallery</v-btn>
+      <v-btn color="black" flat class="text-white" to="/contact">Contact</v-btn>
     </v-app-bar>
 
     <v-main>
@@ -15,9 +17,9 @@
       </v-container>
     </v-main>
 
-    <v-footer color="black" app>
+    <v-footer style="background-color: grey.darken;" max-height="75px" app>
       <div>
-        &copy; 2021
+        &copy; 2021 Lil Pink&apos;s Pastries
       </div>
       <v-spacer></v-spacer>
       <div>
@@ -30,15 +32,14 @@
         <a
            href="https://ash.ashwigltd.com"
            target="_blank"
-        >Ash Hellwig
-        </a>
+        >Ash Hellwig</a>
+        at <i>AshWig, Ltd.</i>
       </div>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-
 export default {
   name: 'App',
 
