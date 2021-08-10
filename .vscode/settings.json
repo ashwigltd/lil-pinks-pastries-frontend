@@ -1,0 +1,32 @@
+{
+    "cSpell.ignoreWords": [
+        "vuetify"
+    ],
+    "javascript.format.enable": false,
+    "javascript.validate.enable": false,
+    "typescript.format.enable": false,
+    "typescript.validate.enable": false,
+    "[vue]": {
+        "gitlens.codeLens.scopes": [
+            "document"
+        ],
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        }
+    },
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "eslint.format.enable": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.js"
+    },
+    "eslint.packageManager": "npm",
+    "eslint.validate": [
+        "javascript",
+        "html",
+        "vue"
+    ]
+}
