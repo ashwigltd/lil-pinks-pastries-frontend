@@ -12,6 +12,10 @@
     </v-row>
 
     <div>
+      <Cakes></Cakes>
+    </div>
+    <br>
+    <div>
       <MiscDesserts></MiscDesserts>
     </div>
 
@@ -20,11 +24,13 @@
 
 <script>
 import logo from '../assets/logo_original.png'
+import Cakes from '../components/desserts/Cakes.vue'
 import MiscDesserts from '../components/desserts/MiscDesserts.vue'
 
 export default {
   name: 'PastryPricingPage',
   components: {
+    Cakes,
     MiscDesserts
   },
 
