@@ -1,18 +1,17 @@
 <template>
   <div class="pastrypricing">
-    <h1 class="text-pink-lighten-3">Pastry Pricing</h1>
-    <v-card>
-      <v-card-title style="background-color: pink">Cakes</v-card-title>
-      <v-card-text>
-        <v-list>
-        </v-list>
-      </v-card-text>
-    </v-card>
+    <PastryPricingPage/>
   </div>
 </template>
 
 <script>
+import PastryPricingPage from '../components/PastryPricingPage.vue'
+
 export default {
+  name: 'PastryPricing',
+  components: {
+    PastryPricingPage
+  },
   data () {
     return {
       headers: [{

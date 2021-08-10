@@ -14,7 +14,8 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint",
         "editor.codeActionsOnSave": {
             "source.fixAll": true
-        }
+        },
+        "editor.tabSize": 2
     },
     "files.associations": {
         "*.js": "javascript"
@@ -28,5 +29,6 @@
         "javascript",
         "html",
         "vue"
-    ]
+    ],
+    "vetur.format.defaultFormatter.html": "prettier"
 }
