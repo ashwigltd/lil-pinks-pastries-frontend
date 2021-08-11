@@ -30,5 +30,7 @@
         "html",
         "vue"
     ],
-    "vetur.format.defaultFormatter.html": "prettier"
+    "vetur.format.defaultFormatter.html": "prettier",
+    "eslint.nodePath": "/home/ahellwig/.nvm/versions/node/v14.17.3/bin/node",
+    "npm.packageManager": "npm"
 }
