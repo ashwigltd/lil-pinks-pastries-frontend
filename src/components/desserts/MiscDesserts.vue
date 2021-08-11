@@ -18,7 +18,7 @@
         style="height: 100%"
       >
         <v-card-text>
-          <v-data-table>
+          <!-- <v-data-table>
             <template v-slot:default>
               <thead>
                 <tr>
@@ -40,7 +40,7 @@
                 </tr>
               </tbody>
             </template>
-          </v-data-table>
+          </v-data-table> -->
         </v-card-text>
         <v-card-actions>
           <v-btn text @click="miscDessertReveal = false">Close</v-btn>

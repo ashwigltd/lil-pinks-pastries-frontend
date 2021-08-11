@@ -1,71 +1,92 @@
 <template>
   <div class="text-center">
-    <v-dialog
-      v-model="cakeDialog"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          dark
-          v-bind="attrs"
-          v-on="on"
-        >
-          Cake Pricing
-        </v-btn>
-      </template>
-
-      <v-card>
-        <v-card-title>
-          Cake Pricing
-        </v-card-title>
-        <v-card-text>
-          <v-data-table
-            :headers="cakeHeaders"
-            :items="cakes"
-            v-model:expanded="expanded"
-            item-key="cakeSize"
-            show-expand
-            class="elevation-1"
-          >
-            <template v-slot:expanded-item="{ cakeHeaders, item }">
-              <td :colspan="cakeHeaders.length">
-                More info about {{ item.cakeSize }} cakes.
-              </td>
-            </template>
-          </v-data-table>
-        </v-card-text>
-        <v-divider></v-divider>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn
-            text
-            @click="cakeDialog = false"
-          >Close</v-btn>
-        </v-card-actions>
-      </v-card>
-
-    </v-dialog>
+    <div class="q-pa-md">
+      <q-btn label="Cakes" color="primary" @click="cakeDialog = true"></q-btn>
+      <q-dialog v-model="cakeDialog">
+        <q-card>
+          <q-card-section>
+            <q-table
+              grid
+              title="Cakes"
+              :rows="cakeRows"
+              :columns="cakeColumns"
+              row-key="cakeSize"
+              hide-header
+            ></q-table>
+          </q-card-section>
+          <q-card-actions>
+            <q-btn flat label="Close" color="primary" v-close-popup></q-btn>
+          </q-card-actions>
+        </q-card>
+      </q-dialog>
+    </div>
   </div>
 </template>
 
 <script>
+const cakeColumns = [{
+  name: 'cakeSize',
+  label: 'Cake Size',
+  align: 'start',
+  sortable: false,
+  field: cakeRow => cakeRow.cakeSize,
+  format: val => `${val}`
+}, {
+  name: 'cakePrice',
+  label: 'Price',
+  sortable: false,
+  field: cakeRow => cakeRow.price,
+  format: val => `${val}`
+}]
+
+const cakeRows = [{
+  cakeSize: '4 inches',
+  price: '$20.00'
+}, {
+  cakeSize: '6 inches',
+  price: '$35.00'
+}, {
+  cakeSize: '8 inches',
+  price: '$45.00'
+}, {
+  cakeSize: '10 inches',
+  price: '$60.00'
+}, {
+  cakeSize: '12 inches',
+  price: '$75.00'
+}, {
+  cakeSize: '4 and 6 inches',
+  price: '$55.00'
+}, {
+  cakeSize: '6 and 8 inches',
+  price: '$120.00'
+}, {
+  cakeSize: '8 and 10 inches',
+  price: '$200.00'
+}, {
+  cakeSize: '10 and 12 inches',
+  price: '$300.00'
+}, {
+  cakeSize: '4, 6, and 8 inches',
+  price: '$135.00'
+}, {
+  cakeSize: '6, 8, and 10 inches',
+  price: '$230.00'
+}, {
+  cakeSize: '8, 10, and 12 inches',
+  price: '$375.00'
+}]
+
 export default {
   name: 'Cakes',
+  setup () {
+    return {
+      cakeColumns,
+      cakeRows
+    }
+  },
   data () {
     return {
-      expanded: [],
-      cakeHeaders: [{
-        text: 'Cake Size',
-        align: 'start',
-        sortable: false,
-        value: 'cakeSize'
-      }, {
-        text: 'Price',
-        value: 'price'
-      }],
-      cakes: [{
-        cakeSize: '4 inches',
-        price: '$20.00'
-      }],
       cakeDialog: false
     }
   }
@@ -73,7 +94,7 @@ export default {
 </script>
 
 <style scoped>
-.v-card--reveal {
+.q-card--reveal {
   bottom: 0;
   opacity: 1 !important;
   position: absolute;
