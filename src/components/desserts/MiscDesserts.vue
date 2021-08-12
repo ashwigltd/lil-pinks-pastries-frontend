@@ -15,6 +15,13 @@
               :pagination="paginationConfig"
             ></q-table>
           </q-card-section>
+          <q-card-section>
+            <ul style="padding-left: 25%">
+              <li>Can deliver with an additional fee of $1.50/mile</li>
+              <li>Please ask if any item you desire is not listed above!</li>
+            </ul>
+            <p></p>
+          </q-card-section>
           <q-card-actions>
             <q-btn flat label="Close" color="primary" v-close-popup></q-btn>
           </q-card-actions>
