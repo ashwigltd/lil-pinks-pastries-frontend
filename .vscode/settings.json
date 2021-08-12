@@ -17,6 +17,14 @@
         },
         "editor.tabSize": 2
     },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "editor.tabSize": 2
+    },
     "files.associations": {
         "*.js": "javascript"
     },

@@ -24,7 +24,7 @@
 
 <script>
 import logo from '../assets/logo_original.png'
-import Cakes from '../components/desserts/Cakes.vue'
+import Cakes from './desserts/Cakes.vue'
 import MiscDesserts from '../components/desserts/MiscDesserts.vue'
 
 export default {
