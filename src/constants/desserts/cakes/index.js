@@ -1,3 +1,19 @@
+export const cakeColumns =
+  [{
+    name: 'cakeSize',
+    label: 'Cake Size',
+    align: 'start',
+    sortable: false,
+    field: cakeRow => cakeRow.cakeSize,
+    format: val => `${val}`
+  }, {
+    name: 'cakePrice',
+    label: 'Price',
+    sortable: false,
+    field: cakeRow => cakeRow.price,
+    format: val => `${val}`
+  }]
+
 export const cakeRows =
   [{
     cakeSize: '4 inches',
@@ -36,18 +52,3 @@ export const cakeRows =
     cakeSize: '8, 10, and 12 inches',
     price: '$375.00'
   }]
-
-export const cakeColumns = [{
-  name: 'cakeSize',
-  label: 'Cake Size',
-  align: 'start',
-  sortable: false,
-  field: cakeRow => cakeRow.cakeSize,
-  format: val => `${val}`
-}, {
-  name: 'cakePrice',
-  label: 'Price',
-  sortable: false,
-  field: cakeRow => cakeRow.price,
-  format: val => `${val}`
-}]
