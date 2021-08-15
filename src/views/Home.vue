@@ -15,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#h1 {
+  font-family: 'Style Script', cursive;
+}
+</style>

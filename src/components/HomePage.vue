@@ -12,7 +12,7 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3 text-pink-lighten-3">
-          <div>Lil Pink&apos;s Pastries</div>
+          <div class="title">Lil Pink&apos;s Pastries</div>
         </h1>
 
         <p class="subheading font-weight-regular text-white">
@@ -36,3 +36,9 @@ export default {
   })
 }
 </script>
+
+<style>
+#title {
+  font-family: 'Style Script', cursive;
+  font-size: 35pt;
+}</style>

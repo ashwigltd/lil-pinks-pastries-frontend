@@ -1,16 +1,18 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
+  <!-- <v-container> -->
+    <!-- <v-row class="text-center"> -->
+      <!-- <v-col cols="12"> -->
+        <div class="text-center" style="padding-left: ; max-width: 200px;">
+        <q-img
           :src="logo"
           class="my-3"
           contain
           height="200"
         />
-      </v-col>
-    </v-row>
-  </v-container>
+        </div>
+      <!-- </v-col> -->
+    <!-- </v-row> -->
+  <!-- </v-container> -->
   <div class="q-pa-md">
     <q-form
       @submit="onSubmit"
@@ -42,10 +44,16 @@
         label="Phone Number"
         hint="(000) 000-0000"
         lazy-rules
-        :rules="[val => val !== null && val !== '' || 'Please type your email']"
+        :rules="[
+          val => val !== null && val !== '' || 'Please type your Phone Number'
+        ]"
       ></q-input>
       <!-- Pastry Selection -->
       <!-- Date Selection -->
+      <q-date
+        v-model="dateRequested"
+        landscape
+      ></q-date>
       <!-- Additional Details -->
       <q-field
         filled
@@ -140,9 +148,3 @@ export default {
   })
 }
 </script>
-
-<style scoped>
-#q-form {
-  background-color: white;
-}
-</style>
