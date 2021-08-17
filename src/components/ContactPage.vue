@@ -2,22 +2,25 @@
   <!-- <v-container> -->
     <!-- <v-row class="text-center"> -->
       <!-- <v-col cols="12"> -->
-        <div class="text-center" style="padding-left: ; max-width: 200px;">
+        <div>
+        <div class="text-center">
         <q-img
           :src="logo"
           class="my-3"
           contain
-          height="200"
+          height="200px"
+          width="200px"
         />
+        </div>
         </div>
       <!-- </v-col> -->
     <!-- </v-row> -->
   <!-- </v-container> -->
-  <div class="q-pa-md">
+  <div class="q-pa-md text-center" style="background-color: white;">
     <q-form
       @submit="onSubmit"
       @reset="onReset"
-      class="q-gutter-md"
+      class="q-gutter-md text-center"
     >
       <!-- clientName -->
       <q-input
