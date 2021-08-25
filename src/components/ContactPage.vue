@@ -97,14 +97,12 @@ export default {
   setup () {
     const $q = useQuasar()
 
-    const {
-      clientName,
-      email,
-      phoneNumber,
-      pastryChoice,
-      dateRequested,
-      additionalDetails
-    } = ref(null)
+    const clientName = ref(null)
+    const email = ref(null)
+    const phoneNumber = ref(null)
+    const pastryChoice = ref(null)
+    const dateRequested = ref(null)
+    const additionalDetails = ref(null)
     const accept = ref(false)
 
     return {
@@ -135,12 +133,12 @@ export default {
       },
 
       onReset () {
-        clientName = null
-        email = null
-        phoneNumber = null
-        pastryChoice = null
-        dateRequested = null
-        additionalDetails = null
+        clientName.value = null
+        email.value = null
+        phoneNumber.value = null
+        pastryChoice.value = null
+        dateRequested.value = null
+        additionalDetails.value = null
         accept.value = false
       }
     }
