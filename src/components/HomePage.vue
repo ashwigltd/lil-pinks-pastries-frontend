@@ -15,10 +15,6 @@
           <div class="title">Lil Pink&apos;s Pastries</div>
         </h1>
 
-        <p class="subheading font-weight-regular text-white">
-          Placeholder text descibing the company mission statement, goals,
-          achievements, etc.
-        </p>
       </v-col>
 
     </v-row>
@@ -26,10 +22,14 @@
 </template>
 
 <script>
+
 import logo from '../assets/logo_original.png'
 
 export default {
   name: 'HomePage',
+
+  components: {
+  },
 
   data: () => ({
     logo
@@ -38,7 +38,15 @@ export default {
 </script>
 
 <style>
+.title {
+  font-family: 'Style Script', cursive;
+  font-size: 100pt;
+}
 #title {
   font-family: 'Style Script', cursive;
   font-size: 35pt;
-}</style>
+}
+#h1 {
+  font-family: 'Style Script', cursive;
+}
+</style>
