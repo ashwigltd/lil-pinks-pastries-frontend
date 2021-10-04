@@ -11,16 +11,17 @@
       </v-col>
     </v-row>
 
-          <v-card>
-            <v-card-title>Cakes</v-card-title>
+          <!-- <v-card> -->
+            <h1>Cake Pricing</h1>
+            <!-- <v-card-title>Cakes</v-card-title>
             <v-card-actions>
               <v-btn text color="teal accent-4" @click="reveal = true">
                 Pricing
               </v-btn>
-            </v-card-actions>
+            </v-card-actions> -->
 
-            <v-expand-transition>
-              <v-card
+            <!-- <v-expand-transition> -->
+              <!-- <v-card
                 v-if="reveal = true"
                 class="transition-fast-in-fast-out v-card--reveal"
                 style="height: 100%"
@@ -29,11 +30,11 @@
                   <p class="text-h4 text--primary">
                     Cake Pricing
                   </p>
-                  <p>Here is where the pricing information goes.</p>
                 </v-card-text>
-              </v-card>
-            </v-expand-transition>
-          </v-card>
+              </v-card> -->
+                  <v-img :src="cakePricingFlier" class="my-3" height="700" />
+            <!-- </v-expand-transition> -->
+          <!-- </v-card> -->
 
   </v-container>
 </template>
@@ -43,6 +44,7 @@ import logo from '../assets/logo_original.png'
 // import cakePricing from '../assets/cakePricing.jpg'
 // import additionalPricing from '../assets/additionalPricing.jpg'
 // import servingSize from '../assets/servingSize.jpg'
+import cakePricingFlier from '../assets/cakePricing.jpg'
 
 export default {
   name: 'PastryPricingPage',
@@ -51,6 +53,7 @@ export default {
 
   data: () => ({
     logo,
+    cakePricingFlier,
     reveal: false
   })
 }
