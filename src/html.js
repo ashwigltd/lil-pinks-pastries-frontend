@@ -12,6 +12,11 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link
+          type="text/css"
+          rel="stylesheet"
+          href="./style/main.css"
+        />
+        <link
           type="application/opensearchdescription+xml"
           rel="search"
           href="opensearch.xml"
