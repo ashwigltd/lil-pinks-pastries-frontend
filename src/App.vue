@@ -8,7 +8,7 @@
       <v-btn color="black" flat class="text-white" to="/pastrypricing">Pricing</v-btn>
       <v-btn color="black" flat class="text-white" to="/gallery">Gallery</v-btn>
       <v-btn color="black" flat class="text-white" to="/contact">Contact</v-btn>
-      <v-btn color="black" flat class="text-white" to="/about">About</v-btn>
+      <!-- <v-btn color="black" flat class="text-white" to="/about">About</v-btn> -->
     </v-app-bar>
 
     <v-main>
