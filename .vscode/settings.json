@@ -36,7 +36,7 @@
         "vue"
     ],
     "vetur.format.defaultFormatter.html": "prettier",
-    "eslint.nodePath": "/home/ahellwig/.nvm/versions/node/v14.17.3/bin/node",
+    "eslint.nodePath": "/home/ahellwig/.nvm/versions/node/v14.18.1/bin/node",
     "npm.packageManager": "npm",
     /* ---- General Editor ---- */
     // Spell Checker
@@ -47,7 +47,8 @@
         "vscode-extension",
         ".git/objects",
         ".vscode",
-        ".vscode-insiders"
+        ".vscode-insiders",
+        "gatsby-*.js"
     ],
     "cSpell.ignoreWords": [
         "vuetify"

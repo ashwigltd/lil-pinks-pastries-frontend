@@ -1,7 +1,18 @@
 # [Settings]
-# # ID = ""
+
+[build]
+  base = "/"
+  publish = "dist/"
+  command = "echo 'default context'"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  # package = "@netlify/plugin-gatsby"
 
 # [[redirects]]
-#   from = "/"
+#   from = "/*"
 #   to = "/index.html"
 #   status = 200
+
+[functions]
+  directory = "netlify/functions/"

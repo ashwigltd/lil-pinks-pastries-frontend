@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Lil Pink's Pastries</ShortName>
+  <Description>Lil Pink's Pastries is a Denver, CO bakery known for ellaborate cakes and desserts.</Description>
+  <Url type="text/html" method="get" template="https://lilpinkspastries.com/blog/?search={searchTerms}"/>
+</OpenSearchDescription>
