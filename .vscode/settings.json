@@ -1,7 +1,4 @@
 {
-    "cSpell.ignoreWords": [
-        "vuetify"
-    ],
     "javascript.format.enable": false,
     "javascript.validate.enable": false,
     "typescript.format.enable": false,
@@ -10,6 +7,14 @@
         "gitlens.codeLens.scopes": [
             "document"
         ],
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "dbaeumer.vscode-eslint",
         "editor.codeActionsOnSave": {
@@ -32,5 +37,19 @@
     ],
     "vetur.format.defaultFormatter.html": "prettier",
     "eslint.nodePath": "/home/ahellwig/.nvm/versions/node/v14.17.3/bin/node",
-    "npm.packageManager": "npm"
+    "npm.packageManager": "npm",
+    /* ---- General Editor ---- */
+    // Spell Checker
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "package.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders"
+    ],
+    "cSpell.ignoreWords": [
+        "vuetify"
+    ]
 }

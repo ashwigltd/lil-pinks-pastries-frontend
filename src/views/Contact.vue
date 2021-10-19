@@ -1,5 +1,23 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="contact">
+    <ContactPage/>
   </div>
 </template>
+
+<script>
+import ContactPage from '../components/ContactPage.vue'
+
+export default {
+  name: 'Contact',
+  components: {
+    ContactPage
+  },
+  data () {
+    return {
+      headers: [{
+        text: 'Size'
+      }]
+    }
+  }
+}
+</script>

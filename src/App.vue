@@ -8,7 +8,7 @@
       <v-btn color="black" flat class="text-white" to="/pastrypricing">Pricing</v-btn>
       <v-btn color="black" flat class="text-white" to="/gallery">Gallery</v-btn>
       <v-btn color="black" flat class="text-white" to="/contact">Contact</v-btn>
-      <v-btn color="black" flat class="text-white" to="/contact">About</v-btn>
+      <!-- <v-btn color="black" flat class="text-white" to="/about">About</v-btn> -->
     </v-app-bar>
 
     <v-main>
@@ -24,7 +24,7 @@
       </div>
       <v-spacer></v-spacer>
       <div>
-        Made with&nbsp;
+        This site was made with&nbsp;
         <v-icon
           class="text-red"
           icon="fas fa-heart"

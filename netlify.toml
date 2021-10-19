@@ -1,0 +1,7 @@
+# [Settings]
+# # ID = ""
+
+# [[redirects]]
+#   from = "/"
+#   to = "/index.html"
+#   status = 200

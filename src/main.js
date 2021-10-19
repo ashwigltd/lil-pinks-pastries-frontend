@@ -3,9 +3,12 @@ import vuetify from './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import './sass/main.sass'
+import './styles/quasar.sass'
+import './styles/quasar.variables.sass'
+import { Quasar, Notify } from 'quasar'
+import quasarUserOptions from './quasar-user-options'
 
-const app = createApp(App)
+const app = createApp(App).use(Quasar, Notify, quasarUserOptions)
 app.use(router)
 app.use(store)
 app.use(vuetify)
