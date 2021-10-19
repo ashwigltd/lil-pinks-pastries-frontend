@@ -44,8 +44,8 @@ Function Update-LPP-Deps {
 
         if ($?) {
             if ($PSBoundParameters['Verbose'] `
-                -or $VerbosePreference `
-                -eq 'Continue') {
+                    -or $VerbosePreference `
+                    -eq 'Continue') {
                 Write-Host "NpmCheckUpdatesPackage: ($NpmCheckUpdatesPackage)"
             }
 
@@ -59,7 +59,8 @@ Function Update-LPP-Deps {
             Write-Host `
                 -ForegroundColor Green `
                 'Finished Updating Project Deps.'
-        } else {
+        }
+        else {
             Write-Host `
                 -ForegroundColor Red `
                 'Failed to Update Deps.'
