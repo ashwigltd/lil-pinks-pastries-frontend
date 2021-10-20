@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "lil-pinks-pastries-frontend",
   "private": true,
-  "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
-  "version": "2.0.0",
+  "description": "Website for Lil Pink's Pastries, a Denver Bakery. Designed with <3 by Ash Hellwig at AshWig, Ltd.",
+  "version": "0.0.1",
   "author": "Thomas Wang <thomas@wang.sh>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ashwigltd/lil-pinks-pastries-frontend/issues"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
@@ -52,7 +52,7 @@
     "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/ashwigltd/lil-pinks-pastries-frontend#readme",
-  "license": "Unlicensed",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashwigltd/lil-pinks-pastries-frontend.git"
