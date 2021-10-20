@@ -16,28 +16,23 @@ class IndexPage extends React.Component {
           keywords={[`bakery`, `denver`, `sweets`, `cakes`, `cakes`]}
         />
         <img
+          // className="logo"
           style={{
-            alignSelf: "center",
-            height: "300px",
-            margin: 0,
+            height: "250px",
           }}
           src="./assets/logo_original.png"
           alt="Logo"
         />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
-        </p>
-        <p>Now go build something great!</p>
-        <Link to="/blog/">
+        <h1 class="center">Local Denver Bakery</h1>
+        {/* Place Instagram Component Here */}
+        <Link className="center" to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
+        </Link>
+        <Link className="center" to="/pricing/">
+          <Button marginTop="35px">Go to Pricing</Button>
+        </Link>
+        <Link className="center" to="/contact/">
+          <Button marginTop="35px">Go to Contact</Button>
         </Link>
       </Layout>
     )
