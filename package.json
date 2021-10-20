@@ -12,6 +12,7 @@
     "url": "https://github.com/ashwigltd/lil-pinks-pastries-frontend/issues"
   },
   "dependencies": {
+    "@fontsource/style-script": "^4.5.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",

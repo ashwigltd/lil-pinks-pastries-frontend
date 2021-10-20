@@ -11,11 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link
-          type="text/css"
-          rel="stylesheet"
-          href="./style/main.css"
-        />
+        <link rel="stylesheet" href="fonts/StyleScript-Regular.ttf" />
         <link
           type="application/opensearchdescription+xml"
           rel="search"

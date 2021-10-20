@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Style Script";
+    src: url("../../static/fonts/StyleScript-Regular.ttf");
+}
+
+p {
+    color: #fff;
+}
+
+footer {
+    color: #fff;
+}
+
+#___gatsby {
+    background-color: #000;
+}
+
+h1 {
+    font-family: 'Style Script', cursive;
+    color: pink;
+}

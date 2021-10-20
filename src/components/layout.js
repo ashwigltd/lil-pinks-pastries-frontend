@@ -4,6 +4,9 @@ import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
 
+import "../css/typography.css"
+import "@fontsource/style-script"
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -36,7 +39,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: `'Style Script'`,
             marginTop: 0,
           }}
         >

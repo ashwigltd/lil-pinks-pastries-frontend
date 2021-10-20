@@ -15,7 +15,15 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`bakery`, `denver`, `sweets`, `cakes`, `cakes`]}
         />
-        <img style={{ height: '300px', margin: 0 }} src="./assets/logo_original.png" alt="Logo" />
+        <img
+          style={{
+            alignSelf: "center",
+            height: "300px",
+            margin: 0,
+          }}
+          src="./assets/logo_original.png"
+          alt="Logo"
+        />
         <h1>
           Hey people{" "}
           <span role="img" aria-label="wave emoji">
