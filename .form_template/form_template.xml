@@ -1,0 +1,45 @@
+<form-template xmlns="http://www.w3.org/1999/xhtml">
+    <fields>
+        <field type="header" subtype="h1" label="Order Form" access="false"></field>
+        <field type="text" required="true" label="Name" placeholder="First Last" class-name="form-control" name="userContactName" access="false" subtype="text"></field>
+        <field type="text" subtype="tel" required="true" label="Contact Phone Number" description="Phone number we can reach you at. Please use 000-000-0000 format." placeholder="000-000-0000" class-name="form-control" name="userContactPhoneNumber" access="false" maxlength="12"></field>
+        <field type="text" subtype="email" required="true" label="Contact Email Address" description="Email address we may reach you at." placeholder="name@domain.com" class-name="form-control" name="userContactEmailAddress" access="false"></field>
+        <field type="radio-group" required="false" label="Desired Fulfillment" description="Preference on pickup or delivery." inline="false" name="radio-group-1634720463775" access="false" other="false">
+            <option label="Pickup" value="userFulfillmentPickup" selected="true">Pickup</option>
+            <option label="Delivery" value="userFulfillmentDelivery" selected="false">Delivery</option>
+        </field>
+        <field type="text" required="false" label="Delivery Location" description="Where we are taking your sweets to." placeholder="123 Main St, Denver, CO 80202" class-name="form-control" name="userDeliveryLocation" access="false" subtype="text"></field>
+        <field type="date" required="true" label="Desired Date of Delivery/Pickup" description="The date you would like to pick up your dessert or have it delivered." class-name="form-control" name="userDesiredFulfillmentDate" access="false"></field>
+        <field type="select" required="false" label="Miscellaneous Desserts" description="Desired desserts that are not cake." class-name="form-control" name="userMiscDesserts" access="false" multiple="true">
+            <option label="Cupcakes" value="userMiscDessertCupcakes" selected="true">Cupcakes</option>
+            <option label="Breakable Hearts" value="userMiscDessertBreakableHearts" selected="false">Breakable Hearts</option>
+            <option label="Lunch Box Cake" value="userMiscDessertLunchBoxCake" selected="false">Lunch Box Cake</option>
+            <option label="Hot Cocoa Bombs (1 each)" value="userMiscDessertHotCocoaBombs1" selected="false">Hot Cocoa Bombs (1 each)</option>
+            <option label="Hot Cocoa Bombs (4 each)" value="userMiscDessertHotCocoaBombs4" selected="false">Hot Cocoa Bombs (4 each)</option>
+            <option label="Pie" value="userMiscDessertPie" selected="false">Pie</option>
+            <option label="8 in. Cheesecake" value="userMiscDessert8inCheesecake" selected="false">8 in. Cheesecake</option>
+        </field>
+        <field type="select" required="false" label="Cake Type" description="The type or shape of the cake" class-name="form-control" name="userCakeSize" access="false" multiple="true">
+            <option label="2 Layer" value="userCakeType2Layer" selected="true">2 Layer</option>
+            <option label="Round" value="userCakeTypeRound" selected="false">Round</option>
+            <option label="Canine Birthday" value="userCakeTypeDog" selected="false">Canine Birthday</option>
+        </field>
+        <field type="select" required="false" label="Cake Size (2 Layer)" description="Cake size for a two layer cake." class-name="form-control" name="userCake2LayerSize" access="false" multiple="true">
+            <option label="4 in." value="userCake2LayerSize04" selected="true">4 in.</option>
+            <option label="6 in." value="userCake2LayerSize06" selected="false">6 in.</option>
+            <option label="8 in." value="userCake2LayerSize08" selected="false">8 in.</option>
+            <option label="10 in." value="userCake2LayerSize10" selected="false">10 in.</option>
+            <option label="12 in." value="userCake2LayerSize12" selected="false">12 in.</option>
+        </field>
+        <field type="select" required="false" label="Cake Size (Round)" description="Desired size for a round cake" class-name="form-control" name="userCakeRoundSize" access="false" multiple="true">
+            <option label="4 in. &amp; 6 in." value="userCakeRoundSize0406" selected="true">4 in. &amp; 6 in.</option>
+            <option label="6 in. &amp; 8 in." value="userCakeRoundSize0608" selected="false">6 in. &amp; 8 in.</option>
+            <option label="8 in. &amp; 10 in." value="userCakeRoundSize0810" selected="false">8 in. &amp; 10 in.</option>
+            <option label="10 in. &amp; 12 in." value="userCakeRoundSize1012" selected="false">10 in. &amp; 12 in.</option>
+            <option label="4, 6, &amp; 8 in." value="userCakeRoundSize040608" selected="false">4, 6, &amp; 8 in.</option>
+            <option label="6, 8, &amp; 10 in." value="userCakeRoundSize060810" selected="false">6, 8, &amp; 10 in.</option>
+            <option label="8, 10, &amp; 12 in." value="userCakeRoundSize081012" selected="false">8, 10, &amp; 12 in.</option>
+        </field>
+        <field type="textarea" required="false" label="Additional Details" description="Quantities, flavors, design requests, etc. should go here." placeholder="Quantities, flavors, design requests, etc." class-name="form-control" name="userOrderDetails" access="false" subtype="textarea"></field>
+    </fields>
+</form-template>

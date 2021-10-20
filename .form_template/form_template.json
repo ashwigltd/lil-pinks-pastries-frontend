@@ -1,0 +1,252 @@
+[
+    {
+        "type": "header",
+        "subtype": "h1",
+        "label": "Order Form",
+        "access": false
+    },
+    {
+        "type": "text",
+        "required": true,
+        "label": "Name",
+        "placeholder": "First Last",
+        "className": "form-control",
+        "name": "userContactName",
+        "access": false,
+        "subtype": "text"
+    },
+    {
+        "type": "text",
+        "subtype": "tel",
+        "required": true,
+        "label": "Contact Phone Number",
+        "description": "Phone number we can reach you at. Please use 000-000-0000 format.",
+        "placeholder": "000-000-0000",
+        "className": "form-control",
+        "name": "userContactPhoneNumber",
+        "access": false,
+        "maxlength": 12
+    },
+    {
+        "type": "text",
+        "subtype": "email",
+        "required": true,
+        "label": "Contact Email Address",
+        "description": "Email address we may reach you at.",
+        "placeholder": "name@domain.com",
+        "className": "form-control",
+        "name": "userContactEmailAddress",
+        "access": false
+    },
+    {
+        "type": "radio-group",
+        "required": false,
+        "label": "Desired Fulfillment",
+        "description": "Preference on pickup or delivery.",
+        "inline": false,
+        "name": "radio-group-1634720463775",
+        "access": false,
+        "other": false,
+        "values": [
+            {
+                "label": "Pickup",
+                "value": "userFulfillmentPickup",
+                "selected": true
+            },
+            {
+                "label": "Delivery",
+                "value": "userFulfillmentDelivery",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "required": false,
+        "label": "Delivery Location",
+        "description": "Where we are taking your sweets to.",
+        "placeholder": "123 Main St, Denver, CO 80202",
+        "className": "form-control",
+        "name": "userDeliveryLocation",
+        "access": false,
+        "subtype": "text"
+    },
+    {
+        "type": "date",
+        "required": true,
+        "label": "Desired Date of Delivery/Pickup",
+        "description": "The date you would like to pick up your dessert or have it delivered.",
+        "className": "form-control",
+        "name": "userDesiredFulfillmentDate",
+        "access": false
+    },
+    {
+        "type": "select",
+        "required": false,
+        "label": "Miscellaneous Desserts",
+        "description": "Desired desserts that are not cake.",
+        "className": "form-control",
+        "name": "userMiscDesserts",
+        "access": false,
+        "multiple": true,
+        "values": [
+            {
+                "label": "Cupcakes",
+                "value": "userMiscDessertCupcakes",
+                "selected": true
+            },
+            {
+                "label": "Breakable Hearts",
+                "value": "userMiscDessertBreakableHearts",
+                "selected": false
+            },
+            {
+                "label": "Lunch Box Cake",
+                "value": "userMiscDessertLunchBoxCake",
+                "selected": false
+            },
+            {
+                "label": "Hot Cocoa Bombs (1 each)",
+                "value": "userMiscDessertHotCocoaBombs1",
+                "selected": false
+            },
+            {
+                "label": "Hot Cocoa Bombs (4 each)",
+                "value": "userMiscDessertHotCocoaBombs4",
+                "selected": false
+            },
+            {
+                "label": "Pie",
+                "value": "userMiscDessertPie",
+                "selected": false
+            },
+            {
+                "label": "8 in. Cheesecake",
+                "value": "userMiscDessert8inCheesecake",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "required": false,
+        "label": "Cake Type",
+        "description": "The type or shape of the cake",
+        "className": "form-control",
+        "name": "userCakeSize",
+        "access": false,
+        "multiple": true,
+        "values": [
+            {
+                "label": "2 Layer",
+                "value": "userCakeType2Layer",
+                "selected": true
+            },
+            {
+                "label": "Round",
+                "value": "userCakeTypeRound",
+                "selected": false
+            },
+            {
+                "label": "Canine Birthday",
+                "value": "userCakeTypeDog",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "required": false,
+        "label": "Cake Size (2 Layer)",
+        "description": "Cake size for a two layer cake.",
+        "className": "form-control",
+        "name": "userCake2LayerSize",
+        "access": false,
+        "multiple": true,
+        "values": [
+            {
+                "label": "4 in.",
+                "value": "userCake2LayerSize04",
+                "selected": true
+            },
+            {
+                "label": "6 in.",
+                "value": "userCake2LayerSize06",
+                "selected": false
+            },
+            {
+                "label": "8 in.",
+                "value": "userCake2LayerSize08",
+                "selected": false
+            },
+            {
+                "label": "10 in.",
+                "value": "userCake2LayerSize10",
+                "selected": false
+            },
+            {
+                "label": "12 in.",
+                "value": "userCake2LayerSize12",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "required": false,
+        "label": "Cake Size (Round)",
+        "description": "Desired size for a round cake",
+        "className": "form-control",
+        "name": "userCakeRoundSize",
+        "access": false,
+        "multiple": true,
+        "values": [
+            {
+                "label": "4 in. & 6 in.",
+                "value": "userCakeRoundSize0406",
+                "selected": true
+            },
+            {
+                "label": "6 in. & 8 in.",
+                "value": "userCakeRoundSize0608",
+                "selected": false
+            },
+            {
+                "label": "8 in. & 10 in.",
+                "value": "userCakeRoundSize0810",
+                "selected": false
+            },
+            {
+                "label": "10 in. & 12 in.",
+                "value": "userCakeRoundSize1012",
+                "selected": false
+            },
+            {
+                "label": "4, 6, & 8 in.",
+                "value": "userCakeRoundSize040608",
+                "selected": false
+            },
+            {
+                "label": "6, 8, & 10 in.",
+                "value": "userCakeRoundSize060810",
+                "selected": false
+            },
+            {
+                "label": "8, 10, & 12 in.",
+                "value": "userCakeRoundSize081012",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "type": "textarea",
+        "required": false,
+        "label": "Additional Details",
+        "description": "Quantities, flavors, design requests, etc. should go here.",
+        "placeholder": "Quantities, flavors, design requests, etc.",
+        "className": "form-control",
+        "name": "userOrderDetails",
+        "access": false,
+        "subtype": "textarea"
+    }
+]
