@@ -63,9 +63,26 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-        <Link to="/">
-          <Button marginTop="35px">Back to Home</Button>
-        </Link>
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            <Link to="/">
+              <Button marginTop="35px">Back to Home</Button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog/">
+              <Button marginTop="35px">Back to Blog</Button>
+            </Link>
+          </li>
+        </ul>
       </Layout>
     )
   }

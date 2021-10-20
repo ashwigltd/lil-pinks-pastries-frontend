@@ -16,7 +16,6 @@ class IndexPage extends React.Component {
           keywords={[`bakery`, `denver`, `sweets`, `cakes`, `cakes`]}
         />
         <img
-          // className="logo"
           style={{
             height: "250px",
           }}
