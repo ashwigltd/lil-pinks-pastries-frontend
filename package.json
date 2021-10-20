@@ -3,7 +3,11 @@
   "private": true,
   "description": "Website for Lil Pink's Pastries, a Denver Bakery. Designed with <3 by Ash Hellwig at AshWig, Ltd.",
   "version": "0.0.1",
-  "author": "Thomas Wang <thomas@wang.sh>",
+  "author": {
+    "name": "Ash Hellwig",
+    "email": "ash@ashwigltd.com",
+    "url": "https://ash.ashwigltd.com"
+  },
   "bugs": {
     "url": "https://github.com/ashwigltd/lil-pinks-pastries-frontend/issues"
   },
