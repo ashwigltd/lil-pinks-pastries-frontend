@@ -13,7 +13,7 @@ const SearchBar = styled.div`
   margin: 0 auto ${rhythm(1)};
   width: 100%;
   height: 3rem;
-  background: #fdfdfd;
+  background: #000;
 
   svg {
     margin: auto 1rem;
@@ -30,7 +30,7 @@ const SearchBar = styled.div`
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
-    background-color: transparent;
+    background-color: black;
     border: none;
     margin: 0;
     padding: 0;
@@ -128,6 +128,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
           type="search"
           placeholder="Search all posts"
           value={query}
+          style={{ color: `white` }}
           onChange={e => {
             navigate(
               e.target.value ? `/blog/?search=${e.target.value}` : "/blog/"
