@@ -16,14 +16,22 @@
     },
     "[javascript]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
             "source.fixAll": true
         },
         "editor.tabSize": 2
     },
     "files.associations": {
-        "*.js": "javascript"
+        "*.js": "javascriptreact"
     },
     "eslint.format.enable": true,
     "eslint.options": {
@@ -51,6 +59,7 @@
         "gatsby-*.js"
     ],
     "cSpell.ignoreWords": [
+        "frontmatter",
         "vuetify"
     ]
 }

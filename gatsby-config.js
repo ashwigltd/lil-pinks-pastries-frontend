@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     // edit below
     title: `Lil Pink's Pastries`,
-    author: `Ash Hellwig (AshWig, Ltd.)`,
+    author: `Ash Hellwig`,
     description: `Website written, hosted, and designed by AshWig, Ltd. for Lil Pink's Pastries: a bakery local to Denver, CO.`,
     siteUrl: `https://lilpinkspastries.com`,
     social: {
@@ -114,14 +114,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Lil Pink's Pastries`,
+        short_name: `Chef Lil Pink`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/gatsby-icon.png`,
+        theme_color_in_head: false,
       },
     },
     {

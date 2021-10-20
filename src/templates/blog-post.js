@@ -2,10 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Button from "../components/button"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -36,7 +37,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        {/* <Bio /> */}
 
         <ul
           style={{
@@ -62,6 +63,9 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <Link to="/">
+          <Button marginTop="35px">Back to Home</Button>
+        </Link>
       </Layout>
     )
   }
