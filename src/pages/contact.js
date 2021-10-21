@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import ContactForm from "../components/contactForm"
 
 class ContactPage extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class ContactPage extends React.Component {
           title="Contact"
           keywords={[`bakery`, `denver`, `sweets`, `cakes`, `cakes`]}
         />
+        {/* ---- Page Header ---- */}
         <img
           // className="logo"
           style={{
@@ -24,7 +26,12 @@ class ContactPage extends React.Component {
           alt="Logo"
         />
         <h1 class="center">Contact Us</h1>
-        {/*  Contact Component Here */}
+        {/* ---- End Page Header ---- */}
+        <ContactForm />
+        {/* ---- Contact Form ---- */}
+        {/* ---- End Contact Form ---- */}
+
+        {/*  ---- Navigation Buttons ---- */}
         <ul
           style={{
             display: `flex`,
@@ -50,6 +57,7 @@ class ContactPage extends React.Component {
             </Link>
           </li>
         </ul>
+        {/* ---- End Navigation Buttons ---- */}
       </Layout>
     )
   }
