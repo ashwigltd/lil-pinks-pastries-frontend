@@ -59,6 +59,7 @@
         "gatsby-*.js"
     ],
     "cSpell.ignoreWords": [
+        "ashwig",
         "frontmatter",
         "vuetify"
     ]
