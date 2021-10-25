@@ -5,22 +5,29 @@ import Button from "./button"
 export default class ContactForm extends React.Component {
   render() {
     return (
-      <div class="center">
-        <form netlify>
-          <div class="">
+      <div className="center">
+        <form
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
+        >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+          <div className="">
             <h1 access="false" id="control-1079174">
               Order Form
             </h1>
           </div>
-          <div class="formbuilder-text form-group field-userContactName">
-            <label for="userContactName" class="formbuilder-text-label">
+          <div className="formbuilder-text form-group field-userContactName">
+            <label htmlFor="userContactName" className="formbuilder-text-label">
               Name
             </label>
             &nbsp;&nbsp;
             <input
               type="text"
               placeholder="First Last"
-              class="form-control"
+              className="form-control"
               name="userContactName"
               access="false"
               id="userContactName"
@@ -28,33 +35,39 @@ export default class ContactForm extends React.Component {
               aria-required="true"
             />
           </div>
-          <div class="formbuilder-text form-group field-userContactPhoneNumber">
-            <label for="userContactPhoneNumber" class="formbuilder-text-label">
+          <div className="formbuilder-text form-group field-userContactPhoneNumber">
+            <label
+              htmlFor="userContactPhoneNumber"
+              className="formbuilder-text-label"
+            >
               Contact Phone Number
             </label>
             &nbsp;&nbsp;
             <input
               type="tel"
               placeholder="000-000-0000"
-              class="form-control"
+              className="form-control"
               name="userContactPhoneNumber"
               access="false"
-              maxlength="12"
+              maxLength="12"
               id="userContactPhoneNumber"
               title="Phone number we can reach you at. Please use 000-000-0000 format."
               required="required"
               aria-required="true"
             />
           </div>
-          <div class="formbuilder-text form-group field-userContactEmailAddress">
-            <label for="userContactEmailAddress" class="formbuilder-text-label">
+          <div className="formbuilder-text form-group field-userContactEmailAddress">
+            <label
+              htmlFor="userContactEmailAddress"
+              className="formbuilder-text-label"
+            >
               Contact Email Address
             </label>
             &nbsp;&nbsp;
             <input
               type="email"
               placeholder="name@domain.com"
-              class="form-control"
+              className="form-control"
               name="userContactEmailAddress"
               access="false"
               id="userContactEmailAddress"
@@ -63,29 +76,29 @@ export default class ContactForm extends React.Component {
               aria-required="true"
             />
           </div>
-          <div class="formbuilder-radio-group form-group field-radio-group-1634720463775">
+          <div className="formbuilder-radio-group form-group field-radio-group-1634720463775">
             <label
-              for="radio-group-1634720463775"
-              class="formbuilder-radio-group-label"
+              htmlFor="radio-group-1634720463775"
+              className="formbuilder-radio-group-label"
             >
               Desired Fulfillment
             </label>
             &nbsp;&nbsp;
-            <div class="radio-group">
-              <div class="formbuilder-radio">
+            <div className="radio-group">
+              <div className="formbuilder-radio">
                 <input
                   name="radio-group-1634720463775"
                   access="false"
                   id="radio-group-1634720463775-0"
                   value="userFulfillmentPickup"
                   type="radio"
-                  checked="checked"
+                  defaultChecked="checked"
                 />
                 &nbsp;&nbsp;
-                <label for="radio-group-1634720463775-0">Pickup</label>
+                <label htmlFor="radio-group-1634720463775-0">Pickup</label>
                 &nbsp;&nbsp;
               </div>
-              <div class="formbuilder-radio">
+              <div className="formbuilder-radio">
                 <input
                   name="radio-group-1634720463775"
                   access="false"
@@ -94,37 +107,40 @@ export default class ContactForm extends React.Component {
                   type="radio"
                 />
                 &nbsp;&nbsp;
-                <label for="radio-group-1634720463775-1">Delivery</label>
+                <label htmlFor="radio-group-1634720463775-1">Delivery</label>
                 &nbsp;&nbsp;
               </div>
             </div>
           </div>
-          <div class="formbuilder-text form-group field-userDeliveryLocation">
-            <label for="userDeliveryLocation" class="formbuilder-text-label">
+          <div className="formbuilder-text form-group field-userDeliveryLocation">
+            <label
+              htmlFor="userDeliveryLocation"
+              className="formbuilder-text-label"
+            >
               Delivery Location
             </label>
             &nbsp;&nbsp;
             <input
               type="text"
               placeholder="123 Main St, Denver, CO 80202"
-              class="form-control"
+              className="form-control"
               name="userDeliveryLocation"
               access="false"
               id="userDeliveryLocation"
               title="Where we are taking your sweets to."
             />
           </div>
-          <div class="formbuilder-date form-group field-userDesiredFulfillmentDate">
+          <div className="formbuilder-date form-group field-userDesiredFulfillmentDate">
             <label
-              for="userDesiredFulfillmentDate"
-              class="formbuilder-date-label"
+              htmlFor="userDesiredFulfillmentDate"
+              className="formbuilder-date-label"
             >
               Desired Date of Delivery/Pickup
             </label>
             &nbsp;&nbsp;
             <input
               type="date"
-              class="form-control"
+              className="form-control"
               name="userDesiredFulfillmentDate"
               access="false"
               id="userDesiredFulfillmentDate"
@@ -133,20 +149,23 @@ export default class ContactForm extends React.Component {
               aria-required="true"
             />
           </div>
-          <div class="formbuilder-select form-group field-userMiscDesserts">
-            <label for="userMiscDesserts" class="formbuilder-select-label">
+          <div className="formbuilder-select form-group field-userMiscDesserts">
+            <label
+              htmlFor="userMiscDesserts"
+              className="formbuilder-select-label"
+            >
               Miscellaneous Desserts
             </label>
             <br></br>
             <select
-              class="form-control"
+              className="form-control"
               name="userMiscDesserts[]"
-              multiple="true"
+              multiple={true}
               id="userMiscDesserts"
             >
               <option
                 value="userMiscDessertCupcakes"
-                selected="true"
+                defaultValue="true"
                 id="userMiscDesserts-0"
               >
                 Cupcakes
@@ -186,20 +205,20 @@ export default class ContactForm extends React.Component {
               </option>
             </select>
           </div>
-          <div class="formbuilder-select form-group field-userCakeSize">
-            <label for="userCakeSize" class="formbuilder-select-label">
+          <div className="formbuilder-select form-group field-userCakeSize">
+            <label htmlFor="userCakeSize" className="formbuilder-select-label">
               Cake Type
             </label>
             <br></br>
             <select
-              class="form-control"
+              className="form-control"
               name="userCakeSize[]"
-              multiple="true"
+              multiple={true}
               id="userCakeSize"
             >
               <option
                 value="userCakeType2Layer"
-                selected="true"
+                defaultValue="true"
                 id="userCakeSize-0"
               >
                 2 Layer
@@ -212,20 +231,23 @@ export default class ContactForm extends React.Component {
               </option>
             </select>
           </div>
-          <div class="formbuilder-select form-group field-userCake2LayerSize">
-            <label for="userCake2LayerSize" class="formbuilder-select-label">
+          <div className="formbuilder-select form-group field-userCake2LayerSize">
+            <label
+              htmlFor="userCake2LayerSize"
+              className="formbuilder-select-label"
+            >
               Cake Size (2 Layer)
             </label>
             <br></br>
             <select
-              class="form-control"
+              className="form-control"
               name="userCake2LayerSize[]"
-              multiple="true"
+              multiple={true}
               id="userCake2LayerSize"
             >
               <option
                 value="userCake2LayerSize04"
-                selected="true"
+                defaultValue="true"
                 id="userCake2LayerSize-0"
               >
                 4 in.
@@ -244,20 +266,23 @@ export default class ContactForm extends React.Component {
               </option>
             </select>
           </div>
-          <div class="formbuilder-select form-group field-userCakeRoundSize">
-            <label for="userCakeRoundSize" class="formbuilder-select-label">
+          <div className="formbuilder-select form-group field-userCakeRoundSize">
+            <label
+              htmlFor="userCakeRoundSize"
+              className="formbuilder-select-label"
+            >
               Cake Size (Round)
             </label>
             <br></br>
             <select
-              class="form-control"
+              className="form-control"
               name="userCakeRoundSize[]"
-              multiple="true"
+              multiple={true}
               id="userCakeRoundSize"
             >
               <option
                 value="userCakeRoundSize0406"
-                selected="true"
+                defaultValue="true"
                 id="userCakeRoundSize-0"
               >
                 4 in. &amp; 6 in.
@@ -282,15 +307,18 @@ export default class ContactForm extends React.Component {
               </option>
             </select>
           </div>
-          <div class="formbuilder-textarea form-group field-userOrderDetails">
-            <label for="userOrderDetails" class="formbuilder-textarea-label">
+          <div className="formbuilder-textarea form-group field-userOrderDetails">
+            <label
+              htmlFor="userOrderDetails"
+              className="formbuilder-textarea-label"
+            >
               Additional Details
             </label>
             <br></br>
             <textarea
               type="textarea"
               placeholder="Quantities, flavors, design requests, etc."
-              class="form-control"
+              className="form-control"
               name="userOrderDetails"
               access="false"
               id="userOrderDetails"

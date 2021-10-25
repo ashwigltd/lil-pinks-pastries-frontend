@@ -31,7 +31,8 @@
         "editor.tabSize": 2
     },
     "files.associations": {
-        "*.js": "javascriptreact"
+        "*.js": "javascriptreact",
+        ".env.*": "env",
     },
     "eslint.format.enable": true,
     "eslint.options": {

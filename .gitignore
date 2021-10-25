@@ -51,6 +51,8 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+**/keys/**
+
 # dotenv environment variables file
 .env.*
 .env.local
