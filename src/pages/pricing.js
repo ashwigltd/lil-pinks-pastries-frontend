@@ -15,17 +15,19 @@ class PricingPage extends React.Component {
           title="Pricing"
           keywords={[`bakery`, `denver`, `sweets`, `cakes`, `cakes`]}
         />
-        <img
-          // className="logo"
-          style={{
-            height: "250px",
-          }}
-          src="../assets/logo_original.png"
-          alt="Logo"
-        />
         <h1 class="center">Pricing Information</h1>
-        {/*  Cake Pricing Here */}
-        {/*  Misc Pricing Here */}
+        {/* Cake Pricing */}
+        <h3 class="center">Cake Pricing</h3>
+        <img src="../assets/cakePricing.jpg" alt="" />
+        {/* Serving Size Information */}
+        <Button className="center">Cake Serving Size Information</Button>
+        {/* End Serving Size Information */}
+        <br></br>
+        {/* End Cake Pricing */}
+        {/* Misc Pricing */}
+        <h3 class="center">Additional Pricing</h3>
+        <img src="../assets/additionalPricing.jpg" alt="" />
+        {/* End Misc Pricing */}
         <ul
           style={{
             display: `flex`,
