@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-// import InstagramFeedViewer from "../components/instagram"
+import InstagramGallery from "../components/instagram"
 
 class IndexPage extends React.Component {
   render() {
@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
         />
         <h1 class="center">Local Denver Bakery</h1>
         {/* Instagram Component */}
-        {/* <InstagramFeedViewer /> */}
+        <InstagramGallery />
         {/* End Instagram Component */}
         <Link className="center" to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
