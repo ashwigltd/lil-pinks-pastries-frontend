@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ashellwig/lil-pinks-pastries-frontent
+  repo: ashwig/lil-pinks-pastries-frontent
 
 media_folder: content/assets
 public_folder: ../assets
