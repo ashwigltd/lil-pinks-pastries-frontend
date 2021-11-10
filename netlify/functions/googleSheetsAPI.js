@@ -1,4 +1,5 @@
-import { GoogleSpreadsheet } from "google-spreadsheet"
+const GoogleSpreadsheetAPI = require('google-spreadsheet')
+const GoogleSpreadsheet = GoogleSpreadsheetAPI.GoogleSpreadsheet
 
 exports.handler = async (event, context, callback) => {
     try {
