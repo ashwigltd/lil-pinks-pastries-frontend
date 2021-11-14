@@ -1,16 +1,27 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 
-const InstagramGallery = () => {
+const InstagramGallery = ({ data }) => {
   return (
-    <div>
-      <h2>Instagram Feed</h2>
-      <p>Nothing to see here, yet...</p>
-    </div>
-    // <InstagramFeed
-    //   token={process.env.INSTAGRAM_USERNAME_ID}
-    //   counter="6"
-    // />
-  )
-}
+    <StaticQuery
+      query={graphql`
+        query InstagramGalleryQuery {
+          allInstaNode(filter: { mediaType: { eq: "IMAGE" } }) {
+            edges {
+              node {
+                id
+                }
+              }
+            }
+          }
+        }
+      `}
 
-export default InstagramGallery
+      render={data => (
+        <div>
+          <h2>Instagram Feed</h2>
+          <p>{data.allInstaNode.edges.node.permalink}</p>
+        </div>
+      });
+    } />
+

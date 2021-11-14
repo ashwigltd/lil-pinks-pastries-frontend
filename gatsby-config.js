@@ -21,6 +21,24 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        access_token: process.env.FB_GRAPH_API_TOKEN,
+        instagram_id: process.env.IG_ACCOUNT_ID,
+      },
+    },
+    // {
+    //   resolve: `gatsby-source-facebook`,
+    //   options: {
+    //     places: [process.env.FB_PAGE_ID],
+    //     params: {
+    //       fields: "instagram_buiness_accounts { media { media_url } }",
+    //     },
+    //     key: process.env.FB_GRAPH_API_TOKEN,
+    //     version: "12.0",
+    //   },
+    // },
+    {
       resolve: "gatsby-plugin-local-search",
       options: {
         name: "blog",
