@@ -23,21 +23,25 @@ class IndexPage extends React.Component {
           src="./assets/logo_original.png"
           alt="Logo"
         />
-        <h1 class="center">Local Denver Bakery</h1>
+        <div>
+          <h1 className="center">Local Denver Bakery</h1>
+        </div>
+        <div>
+          <Link className="center" to="/blog/">
+            <Button marginTop="35px">Go to Blog</Button>
+          </Link>
+          <Link className="center" to="/pricing/">
+            <Button marginTop="35px">Go to Pricing</Button>
+          </Link>
+          <Link className="center" to="/contact/">
+            <Button marginTop="35px">Go to Contact</Button>
+          </Link>
+        </div>
         {/* Instagram Component */}
-        <div class="center">
+        <div className="center">
           <InstagramGallery />
         </div>
         {/* End Instagram Component */}
-        <Link className="center" to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
-        <Link className="center" to="/pricing/">
-          <Button marginTop="35px">Go to Pricing</Button>
-        </Link>
-        <Link className="center" to="/contact/">
-          <Button marginTop="35px">Go to Contact</Button>
-        </Link>
       </Layout>
     )
   }
