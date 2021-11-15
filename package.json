@@ -12,6 +12,7 @@
     "url": "https://github.com/ashwigltd/lil-pinks-pastries-frontend/issues"
   },
   "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^7.0.3",
     "@fontsource/style-script": "^4.5.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -24,6 +25,7 @@
     "gatsby-image": "^2.0.39",
     "gatsby-plugin-feed-mdx": "1.0.0",
     "gatsby-plugin-google-analytics": "^2.0.18",
+    "gatsby-plugin-image": "^2.1.2",
     "gatsby-plugin-local-search": "^1.1.1",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-mdx": "^1.2.14",
