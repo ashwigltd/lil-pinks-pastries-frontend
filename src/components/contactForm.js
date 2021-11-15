@@ -236,7 +236,7 @@ export default class ContactForm extends React.Component {
               htmlFor="userCake2LayerSize"
               className="formbuilder-select-label"
             >
-              Cake Size (2 Layer)
+              2 Layer Cakes
             </label>
             <br></br>
             <select
@@ -271,7 +271,7 @@ export default class ContactForm extends React.Component {
               htmlFor="userCakeRoundSize"
               className="formbuilder-select-label"
             >
-              Cake Size (Round)
+              2 &amp; 3 Tiered Cakes
             </label>
             <br></br>
             <select
