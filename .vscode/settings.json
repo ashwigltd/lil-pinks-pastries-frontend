@@ -61,10 +61,13 @@
     ],
     "cSpell.ignoreWords": [
         "ashwig",
+        "fontsource",
+        "formbuilder",
         "frontmatter",
         "vuetify"
     ],
     "cSpell.words": [
-        "Formik"
+        "Formik",
+        "Insta"
     ]
 }
