@@ -33,6 +33,8 @@
     "files.associations": {
         "*.js": "javascriptreact",
         ".env.*": "env",
+        ".env.development": "env",
+        ".env.production": "env",
     },
     "eslint.format.enable": true,
     "eslint.options": {
