@@ -76,4 +76,13 @@ label {
 
 .header {
     text-align: center;
+    width: 100%;
+}
+
+.ashLink.personalPage {
+    color: pink;
+}
+
+.ashLink {
+    color: inherit;
 }

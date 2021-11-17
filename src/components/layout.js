@@ -6,6 +6,8 @@ import { rhythm, scale } from "../utils/typography"
 
 import "../css/typography.css"
 import "@fontsource/style-script"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHeart } from "@fortawesome/free-regular-svg-icons"
 
 import { Squash as Hamburger } from "hamburger-react"
 
@@ -21,6 +23,7 @@ class Layout extends React.Component {
         <div className="header">
           <div className="title">
             <h1
+              className="title"
               style={{
                 ...scale(1.5),
                 marginBottom: rhythm(1.5),
@@ -33,7 +36,7 @@ class Layout extends React.Component {
                   textDecoration: `none`,
                   color: `inherit`,
                 }}
-                to={location.pathname === blogPath ? `/blog/` : `/`}
+                to={`/`}
               >
                 {title}
               </Link>
@@ -46,23 +49,32 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `'Style Script'`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/blog/`}
-          >
-            {title}
-          </Link>
-        </h3>
+        <div className="header">
+          <div className="title">
+            <h1
+              className="title"
+              style={{
+                fontFamily: `'Style Script'`,
+                marginTop: 0,
+                marginBottom: rhythm(1.5),
+              }}
+            >
+              <Link
+                style={{
+                  boxShadow: `none`,
+                  textDecoration: `none`,
+                  color: `inherit`,
+                }}
+                to={`/blog/`}
+              >
+                {title}
+              </Link>
+            </h1>
+          </div>
+          <div className="menu">
+            <Hamburger color="pink"></Hamburger>
+          </div>
+        </div>
       )
     }
     return (
@@ -79,12 +91,28 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Made with Love by
-          {` `}
-          <a target="_blank" rel="noreferrer" href="https://ash.ashwigltd.com">
+          © {new Date().getFullYear()}, Made with &nbsp;
+          <FontAwesomeIcon
+            style={{ color: `pink` }}
+            icon={faHeart}
+          /> &nbsp;by{" "}
+          <a
+            className="ashLink personalPage"
+            target="_blank"
+            rel="noreferrer"
+            href="https://ash.ashwigltd.com"
+          >
             Ash
+          </a>{" "}
+          at{" "}
+          <a
+            className="ashLink"
+            target="_blank"
+            rel="noreferrer"
+            href="https://cannalysis.ashwigltd.com"
+          >
+            AshWig, Ltd.
           </a>
-          &nbsp;at AshWig, Ltd.
         </Footer>
       </Wrapper>
     )
