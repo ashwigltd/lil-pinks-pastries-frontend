@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-regular-svg-icons"
 
 import { Squash as Hamburger } from "hamburger-react"
+// import { pushRotate as Menu } from "react-burger-menu"
 
 class Layout extends React.Component {
   render() {
@@ -17,6 +18,12 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
+
+    let hamburgerMenu = (
+      <div className="menu">
+        <Hamburger color="pink"></Hamburger>
+      </div>
+    )
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
@@ -42,9 +49,7 @@ class Layout extends React.Component {
               </Link>
             </h1>
           </div>
-          <div className="menu">
-            <Hamburger color="pink"></Hamburger>
-          </div>
+          <div className="menu">{hamburgerMenu}</div>
         </div>
       )
     } else {
@@ -71,9 +76,7 @@ class Layout extends React.Component {
               </Link>
             </h1>
           </div>
-          <div className="menu">
-            <Hamburger color="pink"></Hamburger>
-          </div>
+          {hamburgerMenu}
         </div>
       )
     }
@@ -90,6 +93,8 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
+
+        {/* ---- BEGIN: FOOTER ---- */}
         <Footer>
           © {new Date().getFullYear()}, Made with &nbsp;
           <FontAwesomeIcon
@@ -114,6 +119,7 @@ class Layout extends React.Component {
             AshWig, Ltd.
           </a>
         </Footer>
+        {/* ---- END: FOOTER ---- */}
       </Wrapper>
     )
   }
