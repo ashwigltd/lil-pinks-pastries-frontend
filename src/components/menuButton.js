@@ -19,7 +19,7 @@ const MenuButton = () => {
               className="center"
               onClick={() => toggle(false)}
               onKeyDown={() => toggle(false)}
-              to="/blog/"
+              to="/"
             >
               Home
             </Link>
