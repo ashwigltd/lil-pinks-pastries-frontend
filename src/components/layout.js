@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -11,6 +11,7 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons"
 
 import { Squash as Hamburger } from "hamburger-react"
 // import { pushRotate as Menu } from "react-burger-menu"
+import MenuButton from "./menuButton"
 
 class Layout extends React.Component {
   render() {
@@ -18,12 +19,6 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
-
-    let hamburgerMenu = (
-      <div className="menu">
-        <Hamburger color="pink"></Hamburger>
-      </div>
-    )
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
@@ -49,7 +44,7 @@ class Layout extends React.Component {
               </Link>
             </h1>
           </div>
-          <div className="menu">{hamburgerMenu}</div>
+          <MenuButton></MenuButton>
         </div>
       )
     } else {
@@ -76,7 +71,7 @@ class Layout extends React.Component {
               </Link>
             </h1>
           </div>
-          {hamburgerMenu}
+          <MenuButton></MenuButton>
         </div>
       )
     }

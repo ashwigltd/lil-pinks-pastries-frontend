@@ -26,17 +26,6 @@ class IndexPage extends React.Component {
         <div>
           <h1 className="center">Local Denver Bakery</h1>
         </div>
-        <div>
-          <Link className="center" to="/blog/">
-            <Button marginTop="35px">Go to Blog</Button>
-          </Link>
-          <Link className="center" to="/pricing/">
-            <Button marginTop="35px">Go to Pricing</Button>
-          </Link>
-          <Link className="center" to="/contact/">
-            <Button marginTop="35px">Go to Contact</Button>
-          </Link>
-        </div>
         {/* Instagram Component */}
         <div className="center">
           <InstagramGallery />
