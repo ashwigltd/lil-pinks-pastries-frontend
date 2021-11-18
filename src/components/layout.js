@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -9,8 +9,6 @@ import "@fontsource/style-script"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-regular-svg-icons"
 
-import { Squash as Hamburger } from "hamburger-react"
-// import { pushRotate as Menu } from "react-burger-menu"
 import MenuButton from "./menuButton"
 
 class Layout extends React.Component {
