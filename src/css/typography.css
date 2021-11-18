@@ -69,6 +69,11 @@ label {
     float: right;
 }
 
+a.center {
+    color: pink;
+    text-decoration-color: pink;
+}
+
 .title {
     display: inline-block;
     margin:0 auto;
@@ -86,7 +91,3 @@ label {
 .ashLink {
     color: inherit;
 }
-
-/* ---- BEGIN: Menu Style ---- */
-
-/* ---- END: Menu Style ---- */
