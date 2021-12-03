@@ -132,7 +132,19 @@ module.exports = {
         theme_color: `#000000`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icons: [
+          {
+            src: "/icons/android-chrome-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/icons/android-chrome-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
+        icon: "content/assets/icon-512x512.png",
         theme_color_in_head: false,
       },
     },
