@@ -25,7 +25,7 @@ class ContactPage extends React.Component {
           src="../assets/logo_original.png"
           alt="Logo"
         />
-        <h1 class="center">Contact Us</h1>
+        <h1 className="center">Contact Us</h1>
         {/* ---- End Page Header ---- */}
         <ContactForm />
         {/* ---- Contact Form ---- */}

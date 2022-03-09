@@ -10,7 +10,7 @@ const MenuButton = () => {
   const toggle = () => setToggled(!toggled)
 
   return (
-    <div class="menu" onClick={toggle} onKeyDown={toggle}>
+    <div className="menu" onClick={toggle} onKeyDown={toggle}>
       <Hamburger color="pink" toggled={toggled} toggle={toggle} />
       {toggled && (
         <ul>

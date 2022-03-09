@@ -15,9 +15,9 @@ class PricingPage extends React.Component {
           title="Pricing"
           keywords={[`bakery`, `denver`, `sweets`, `cakes`, `cakes`]}
         />
-        <h1 class="center">Pricing Information</h1>
+        <h1 className="center">Pricing Information</h1>
         {/* Cake Pricing */}
-        <h3 class="center">Cake Pricing</h3>
+        <h3 className="center">Cake Pricing</h3>
         <img src="../assets/cakePricing.jpg" alt="" />
         {/* Serving Size Information */}
         <Button className="center">Cake Serving Size Information</Button>
@@ -25,7 +25,7 @@ class PricingPage extends React.Component {
         <br></br>
         {/* End Cake Pricing */}
         {/* Misc Pricing */}
-        <h3 class="center">Additional Pricing</h3>
+        <h3 className="center">Additional Pricing</h3>
         <img src="../assets/additionalPricing.jpg" alt="" />
         {/* End Misc Pricing */}
         <ul
