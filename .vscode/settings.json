@@ -4,9 +4,6 @@
     "typescript.format.enable": false,
     "typescript.validate.enable": false,
     "[vue]": {
-        "gitlens.codeLens.scopes": [
-            "document"
-        ],
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "dbaeumer.vscode-eslint",
         "editor.codeActionsOnSave": {
