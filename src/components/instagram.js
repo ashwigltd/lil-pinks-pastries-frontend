@@ -6,7 +6,7 @@ import Gallery from "@browniebroke/gatsby-image-gallery"
 const InstagramGallery = () => {
   const data = useStaticQuery(graphql`
     {
-      allInstaNode(limit: 12) {
+      allInstaNode(limit: 12, sort: {fields: [timestamp], order: DESC}) {
         edges {
           node {
             localFile {
