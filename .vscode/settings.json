@@ -1,4 +1,7 @@
 {
+    "auto-rename-tag.activationOnLanguage": [
+        "*"
+    ],
     "javascript.format.enable": false,
     "javascript.validate.enable": false,
     "typescript.format.enable": false,
@@ -21,7 +24,7 @@
     },
     "[javascriptreact]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "remimarsal.prettier-now",
         "editor.codeActionsOnSave": {
             "source.fixAll": true
         },
@@ -38,6 +41,10 @@
         "configFile": ".eslintrc.js"
     },
     "eslint.packageManager": "npm",
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
     "eslint.validate": [
         "javascript",
         "html",

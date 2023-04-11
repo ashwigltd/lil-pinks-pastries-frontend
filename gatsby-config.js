@@ -13,6 +13,9 @@ module.exports = {
       twitter: `hellwigashton`,
     },
   },
+  flags: {
+    DEV_SSR: false
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
