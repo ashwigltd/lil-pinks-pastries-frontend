@@ -149,7 +149,7 @@ export default class ContactForm extends React.Component {
               aria-required="true"
             />
           </div>
-          <div className="formbuilder-select form-group field-userMiscDesserts">
+          {/* <div className="formbuilder-select form-group field-userMiscDesserts">
             <label
               htmlFor="userMiscDesserts"
               className="formbuilder-select-label"
@@ -306,7 +306,7 @@ export default class ContactForm extends React.Component {
                 8, 10, &amp; 12 in.
               </option>
             </select>
-          </div>
+          </div> */}
           <div className="formbuilder-textarea form-group field-userOrderDetails">
             <label
               htmlFor="userOrderDetails"
