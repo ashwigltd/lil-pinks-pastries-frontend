@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import InstagramGallery from "../components/instagram"
+// import InstagramGallery from "../components/instagram"
 
 class IndexPage extends React.Component {
   render() {
@@ -25,9 +25,9 @@ class IndexPage extends React.Component {
           <h1 className="center">Local Denver Bakery</h1>
         </div>
         {/* Instagram Component */}
-        <div className="center">
+        {/* <div className="center">
           <InstagramGallery />
-        </div>
+        </div> */}
         {/* End Instagram Component */}
       </Layout>
     )

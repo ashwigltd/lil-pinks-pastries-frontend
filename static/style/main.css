@@ -1,3 +1,11 @@
 h1 {
     font-family: 'Style Script', cursive;
 }
+
+.showImage {
+    display: flex;
+}
+
+.hideImage {
+    display: none;
+}

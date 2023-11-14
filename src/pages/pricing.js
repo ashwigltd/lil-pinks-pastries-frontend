@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+// import servingSize from "../components/servingSize"
 
 class PricingPage extends React.Component {
   render() {
@@ -20,7 +22,8 @@ class PricingPage extends React.Component {
         <h3 className="center">Cake Pricing</h3>
         <img src="../assets/cakePricing.jpg" alt="" />
         {/* Serving Size Information */}
-        <Button className="center">Cake Serving Size Information</Button>
+        <h3>Cake Serving Size</h3>
+        <img src="../assets/servingSize.jpg" alt="" />
         {/* End Serving Size Information */}
         <br></br>
         {/* End Cake Pricing */}

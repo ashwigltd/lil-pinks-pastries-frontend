@@ -91,3 +91,11 @@ a.center {
 .ashLink {
     color: inherit;
 }
+
+.showImage {
+    display: flex;
+}
+
+.hideImage {
+    display: none;
+}
